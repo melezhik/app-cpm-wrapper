@@ -22,7 +22,9 @@ For example:
 
 See parameters description at [cpm doc](https://metacpan.org/pod/distribution/App-cpm/script/cpm)
 
-If you need some automation:
+# Automation
+
+By sparrow tasks:
 
     $ sparrow project create cpan
 
@@ -36,6 +38,20 @@ If you need some automation:
         - '~L': /home/melezhik/cpan
 
     $ sparrow task run cpan/installer --param module="HTTP::Tiny Config::Tiny"
+
+
+Or if you prefer remote run, use Sparrowdo:
+
+
+    $ cat sparrowfile
+
+
+    task-run "install a couple of modules", "app-cpm-wrapper", %(
+      args => (
+        %( '~w' => 2 ),
+        %( '~L' => '/home/melezhik/cpan' ),
+      )
+    );
 
 
 # Author
