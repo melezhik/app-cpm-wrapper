@@ -1,0 +1,9 @@
+{
+
+  "name" : "app-cpm-wrapper",
+  "description" : "Simple wrapper for App::cpm",
+  "version" : "0.0.1",
+  "sparrow_version": "0.2.48",
+  "category" : "utilities",
+  "url" : "https://github.com/melezhik/app-cpm-wrapper"
+}
