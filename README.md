@@ -32,8 +32,8 @@ If you need some automation:
 
       ---
       args: 
-        '~w': 2 
-        '~L': /home/melezhik/cpan
+        - '~w': 2 
+        - '~L': /home/melezhik/cpan
 
     $ sparrow task run cpan/installer --param module="HTTP::Tiny Config::Tiny"
 
