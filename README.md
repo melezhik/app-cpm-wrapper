@@ -42,9 +42,7 @@ By sparrow tasks:
 
 Or if you prefer remote run, use Sparrowdo:
 
-
     $ cat sparrowfile
-
 
     task-run "install a couple of modules", "app-cpm-wrapper", %(
       args => (
@@ -53,6 +51,8 @@ Or if you prefer remote run, use Sparrowdo:
       )
     );
 
+
+    $ sparrowdo --host=$host # run on remote host
 
 # Author
 
