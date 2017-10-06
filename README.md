@@ -46,8 +46,8 @@ Or if you prefer remote run, use Sparrowdo:
 
     task-run "install a couple of modules", "app-cpm-wrapper", %(
       args => (
-        %( '~w' => 2 ),
-        %( '~L' => '/home/melezhik/cpan' ),
+        'g', # global install
+        %( '~w' => 2 ) # numbe of workers
       )
     );
 
